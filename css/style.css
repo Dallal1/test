@@ -1,0 +1,116 @@
+
+/* Start Glubel Reul */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.contener {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Smol */
+@media (min-width: 768px){
+    .contener{
+        width: 750px;
+    }
+}
+/* Mdiomd */
+@media (min-width: 992px){
+    .contener{
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px){
+    .contener{
+        width: 1170px;
+    }
+}
+/* End Glubel Reul */
+
+/* Start Heder */
+.heder {
+    padding: 20px;
+}
+.heder .contener {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.heder .logo {
+    width: 60px;
+}
+.heder .links {
+    position: relative;
+}
+.heder .links .icon {
+    display: flex;
+    flex-wrap: wrap;
+    width: 30px;
+    justify-content: flex-end ;
+}
+.heder .links .icon span {
+    background-color: #333;
+    margin-bottom: 5px;
+    height: 2px;
+}
+.heder .links .icon span:first-child {
+    width: 100%;
+}
+.heder .links .icon span:nth-child(2) {
+    width: 60%;
+    transition: 0.3s;
+}
+.heder .links .icon span:last-child {
+    width: 100%;
+}
+.heder .links .icon:hover  span:nth-child(2){
+    width: 100%;
+}
+.heder .links ul {
+    position: absolute;
+    display: none;
+    background-color: #f3f3f3;
+    padding: 0px;
+    margin: 0px;
+    right: 0px;
+    top: calc(100% + 15px);
+    min-width: 200px;
+    list-style: none;
+}
+.heder .links ul::before {
+    content: "";
+    border-color: transparent transparent #f3f3f3 transparent;
+    border-style: solid;
+    border-width: 10px;
+    position: absolute;
+    top: -18px;
+    right: 5px;
+}
+.heder .links ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    color: #333;
+    transition: 0.3s;
+}
+.heder .links ul li:not(:last-child) a {
+    border-bottom: solid;
+    border-color: #ddd;
+    border-width: 2px;
+}
+.heder .links ul li a:hover {
+    padding-left: 5px;
+}
+.heder .links:hover ul {
+    display: block;
+}
+/* End Heder */
